@@ -1,0 +1,29 @@
+<script>
+    /*
+    //PROBLEMA: Faça um script que pergunte em que turno você estuda.
+    Peça para digitar M-matutino ou V-Vespertino ou N- Noturno.
+    Imprima a mensagem
+    - "Bom Dia!"
+    - "Boa Tarde!" ou
+    - "Boa Noite!" ou
+    - "Valor Inválido!"
+    conforme o caso.
+    */
+
+    //ENTRADA
+    const turno = String(prompt("informe seu turno M-Matutino V-Vespertino ou N-Noturno")).toUpperCase()
+    let conceito
+    //PROCESSAMENTO
+    switch (turno) {
+        case "V": conceito = "boa tarde"
+        break;
+        case "N" : conceito = "boa noite"
+      break;
+        case "M" : conceito = "bom dia"
+        break;
+        default : conceito = "valor invalido"
+    }
+    
+    //SAÍDA
+    document.write(`${conceito}`)
+</script>

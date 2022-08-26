@@ -1,0 +1,31 @@
+<script>
+  const telefonou = parseInt(prompt("telefonou para a vítima? 1=sim 0=nao"));
+
+  const esteveLocal1 = parseInt(prompt("Esteve no local do crime? 1=sim 0=nao"));
+
+  const moraPerto = parseInt(prompt("Mora perto da vítima? 1=sim 0=nao"));
+
+  const devia = parseInt(prompt("Devia para a vítima? 1=sim  0=nao"));
+
+  const trabalhou = parseInt(prompt("Já trabalhou com a vítima? 1=sim 0=nao"));
+
+  const tudo = telefonou + esteveLocal1 + moraPerto + devia + trabalhou; let conceito; switch (tudo) {
+
+    case 0:
+
+    case 1:
+      resultadoNaTela = "INOCENTE!"
+      break;
+    case 2:
+      resultadoNaTela = "SUSPEITO!"
+      break;
+    case 3:
+    case 4:
+      resultadoNaTela = "CÚMPLICE!"
+      break;
+    case 5:
+      resultadoNaTela = "ASSASSINO!"
+
+  }document.write(`${resultadoNaTela}`)
+
+</script>
